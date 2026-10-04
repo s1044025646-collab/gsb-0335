@@ -1,0 +1,19 @@
+{
+  "name": "ppr-backend",
+  "version": "1.0.0",
+  "description": "个性化 PageRank 权重传播与收敛解释后端 (API + CLI)",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --disable-warning=ExperimentalWarning --test dist/__tests__/ppr.test.js",
+    "start": "npm run build && node --disable-warning=ExperimentalWarning dist/api.js",
+    "cli": "npm run build && node --disable-warning=ExperimentalWarning dist/cli.js",
+    "demo": "npm run build && node --disable-warning=ExperimentalWarning dist/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "tsx": "*",
+    "typescript": "*"
+  }
+}

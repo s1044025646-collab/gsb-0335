@@ -1,0 +1,1 @@
+{"nodes":["A","B","C"],"edges":[{"source":"A","target":"B","weight":1},{"source":"B","target":"C","weight":1},{"source":"C","target":"A","weight":1}]}
